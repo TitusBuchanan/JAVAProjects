@@ -3,6 +3,9 @@ package com.codewithmosh;
 public class Main {
 
     public static void main(String[] args) {
-	System.out.println("Hello Teezus");
+	    byte myAge =28;
+	    long viewCount = 3_123_456_789L;
+
+        System.out.println(viewCount);
     }
 }
