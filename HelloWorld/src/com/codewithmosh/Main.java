@@ -5,7 +5,8 @@ package com.codewithmosh;
 public class Main {
 
     public static void main(String[] args) {
-            String message = new String("Hi Titus");
+        String message = "Hello World" + "!!";
+        System.out.println(message);
 
     }
 }
