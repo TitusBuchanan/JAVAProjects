@@ -6,23 +6,20 @@ public class Main {
 
     public static void main(String[] args) {
         Random rand = new Random();
-        Dice dice = new Dice();
-        System.out.println(dice.getDiceValue());
-        dice.roll(rand);
-        System.out.println(dice.getDiceValue());
-        dice.roll(rand);
-        System.out.println(dice.getDiceValue());
-        dice.roll(rand);
-        System.out.println(dice.getDiceValue());
-        dice.roll(rand);
-        System.out.println(dice.getDiceValue());
-        dice.roll(rand);
-        System.out.println(dice.getDiceValue());
-        dice.roll(rand);
-        System.out.println(dice.getDiceValue());
-        dice.roll(rand);
-        System.out.println(dice.getDiceValue());
-        dice.roll(rand);
+        Hand titusHand = new Hand();
+
+        System.out.print(titusHand.getDiceValue(2) + " ");
+        System.out.print(titusHand.getDiceValue(3) + " ");
+        System.out.print(titusHand.getDiceValue(3) + " ");
+        System.out.print("\n");
+        titusHand.diceRoll(rand);
+        System.out.print(titusHand.getDiceValue(0) + " ");
+        System.out.print(titusHand.getDiceValue(1) + " ");
+        System.out.print(titusHand.getDiceValue(4) + " ");
+        System.out.print("\n");
+        titusHand.roll(rand,2);
+        titusHand.roll(rand,1);
+
 
 
 
