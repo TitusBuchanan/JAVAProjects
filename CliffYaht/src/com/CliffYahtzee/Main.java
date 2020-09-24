@@ -26,6 +26,10 @@ public class Main {
         System.out.print(myHand.getDie(1));
         System.out.print(myHand.getDie(3));
         myHand.roll(rand);
+        System.out.print(myHand.getDie(0));
+        System.out.print(myHand.getDie(1));
+        System.out.print(myHand.getDie(3));
+        myHand.roll(rand);
 
 
     }
