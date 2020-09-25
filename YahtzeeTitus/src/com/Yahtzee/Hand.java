@@ -27,4 +27,6 @@ public class Hand {
     public int getDiceValue(int pos) {
         return die.get(pos).getDiceValue();
     }
+
+
 }
