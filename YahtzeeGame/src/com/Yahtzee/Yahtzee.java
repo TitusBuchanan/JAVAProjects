@@ -101,7 +101,7 @@ import java.util.Arrays;
                         temp[Integer.parseInt(indices) - 1] = roll();
                     }
                     else {
-                        System.out.println("Incorrect input. Rolling selected");
+                        System.out.println("Incorrect . Rolling selected");
 
                     }
 
