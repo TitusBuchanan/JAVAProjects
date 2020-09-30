@@ -6,8 +6,9 @@ import java.util.Arrays;
 public class Main {
 
     public static void main(String[] args) {
-        int x = 20 + 3 * 4;
-        System.out.println(x);
+        double x = 1.1;
+        double y = x + 2;
+        System.out.println(y);
 
     }
 }
