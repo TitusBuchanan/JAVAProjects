@@ -1,5 +1,6 @@
 package com.MortgageMosh;
 
+import java.text.NumberFormat;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -21,6 +22,12 @@ public class Main {
         System.out.print("Period (Years): ");
         byte years = scanner.nextByte();
         int numberOfPayments = years * MONTHS_IN_YEAR;
+
+        double mortgage = principal * (monthlyInterest * Math.pow(1 + monthlyInterest, numberOfPayments)
+        / (Math.pow(1 + monthlyInterest, numberOfPayments) - 1));
+
+        String mortgageFormatted = NumberFormat.getCurrencyInstance().format(mortgage);
+        System.out.print("Mortgage: " + mortgageFormatted);
 
 
     }
