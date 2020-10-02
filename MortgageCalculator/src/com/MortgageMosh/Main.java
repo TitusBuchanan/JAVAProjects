@@ -19,7 +19,9 @@ public class Main {
         float monthlyInterest = annualInterest / PERCENT /MONTHS_IN_YEAR;
 
         System.out.print("Period (Years): ");
-        byte years =
+        byte years = scanner.nextByte();
+        int numberOfPayments = years * MONTHS_IN_YEAR;
+
 
     }
 }
