@@ -8,11 +8,14 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
+        //comparison operators
+
+
         //Reading input
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Name: ");
-        String name = scanner.nextLine().trim();
-        System.out.println("You are " + name);
+        //Scanner scanner = new Scanner(System.in);
+       // System.out.print("Name: ");
+       // String name = scanner.nextLine().trim();
+       // System.out.println("You are " + name);
 
         //Formatting Numbers
        //NumberFormat percent = NumberFormat.getPercentInstance();
