@@ -7,6 +7,8 @@ import java.util.Random;
 public class Hand {
     private List<Dice> die;
 
+
+    //Constructor
     public Hand() {
         die = new ArrayList<Dice>();
         for(int diceCount = 0; diceCount < 5; diceCount++) {
@@ -27,6 +29,10 @@ public class Hand {
     public int getDiceValue(int pos) {
         return die.get(pos).getDiceValue();
     }
+
+
+
+
 
 
 }
