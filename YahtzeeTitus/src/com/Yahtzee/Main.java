@@ -15,7 +15,7 @@ public class Main {
         titusHand.diceRoll(rand);
         System.out.print(titusHand.getDiceValue(0) + " ");
         System.out.print(titusHand.getDiceValue(1) + " ");
-        System.out.print(titusHand.getDiceValue(4) + " ");
+        System.out.print(titusHand.getDiceValue(2) + " ");
         System.out.print("\n");
         titusHand.roll(rand,2);
         titusHand.roll(rand,1);
