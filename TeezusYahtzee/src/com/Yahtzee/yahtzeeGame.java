@@ -8,7 +8,7 @@ import java.util.Arrays;
 public class yahtzeeGame {
 
 
-    public void play() {
+    public static void play() {
     }
 
     public class Yahtzee {
