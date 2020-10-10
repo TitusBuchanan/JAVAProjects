@@ -13,7 +13,7 @@ public class yahtzeeGame {
 
     public class Yahtzee {
 
-        private int[] diceArray = new int[6];
+        private int[] diceArray = new int[5];
         private int turns = 0;
 
         public Yahtzee() {
