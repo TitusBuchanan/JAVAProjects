@@ -30,7 +30,7 @@ public class Main {
         System.out.print(myHand.getDie(1));
         System.out.print(myHand.getDie(3));
         myHand.roll(rand);
-        myHand.roll();
+        myHand.roll(rand);
 
 
     }
