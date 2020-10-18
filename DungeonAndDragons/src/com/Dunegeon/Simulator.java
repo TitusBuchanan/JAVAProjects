@@ -37,7 +37,7 @@ public class Simulator {
 
                 this.damage = this.twentySidedDie.hand();
                 if(damage == 20) {
-                    System.out.println("This was a critical Hit");
+                    System.out.println("This was a Critical Hit");
                     this.criticalHit = true;
                 }
 
