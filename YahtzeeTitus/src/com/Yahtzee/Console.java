@@ -3,6 +3,19 @@ package com.Yahtzee;
 import java.util.Scanner;
 
 public class Console {
-    private Scanner scanner = new Scanner(System.in);
+    static Scanner scanner = new Scanner(System.in);
+
+    static public void welcome(String playerName) {
+        System.out.println("Welcome " + playerName + " To Yahtzee");
+    }
+
+    static public void log(String output) {
+        System.out.println(output);
+    }
+
+    static public void log(int output) {
+        System.out.println(output);
+    }
+
 
 }

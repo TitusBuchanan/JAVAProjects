@@ -10,7 +10,6 @@ public class Hand {
     public  Hand() {
         dice = new ArrayList<Die>();
         for(int count = 0; count  < 5; count++) {
-            //var die = new Die();
             dice.add(new Die());
         }
     }
@@ -25,7 +24,19 @@ public class Hand {
         dice.get(choice).roll(rand);
     }
 
-    public int getDie(int pos){
-        return dice.get(pos).getValue();
+    public void roll(Random rand, List<Integer> choices) {
+        for (int choice : choices) {
+            roll(rand, choice);
+        }
     }
+
+    public List<Integer> getDice() {
+        List<Integer> values = new ArrayList<>();
+        for (var die : dice) {
+            values.add(die.getValue());
+        }
+        return values;
+    }
+
+
 }
