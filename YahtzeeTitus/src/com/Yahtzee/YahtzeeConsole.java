@@ -18,12 +18,12 @@ public class YahtzeeConsole extends Console {
 
     static public int getChoice() {
         System.out.print("Which die do you want to reroll 1-5: ");
-        String input = scanner.nextLine();
-        return Integer.parseInt(input) - 1;
+        String reroll = scanner.nextLine();
+        return Integer.parseInt(reroll) - 1;
     }
 
     static public List<Integer> getChoices() {
-        System.out.print("Which dice do you want to reroll 1-5 Ex 1 2 4: ");
+        System.out.print("What die do you want to reroll 1-5 Ex 1 2 4: ");
         String input = scanner.nextLine();
         String[] inputArray = input.split(" ");
         List<Integer> choices = new ArrayList<>();
