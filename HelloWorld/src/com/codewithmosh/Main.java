@@ -13,7 +13,7 @@ public class Main {
 
         //Reading input
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Name: ");
+        // System.out.print("Name: ");
        // String name = scanner.nextLine().trim();
        // System.out.println("You are " + name);
 

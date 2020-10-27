@@ -23,6 +23,12 @@ public class BankAccount {
         if(amt <= amt) {
             balance -= amt;
         }
+
+
+        @Override
+        public String toString() {
+            return "type: " + type + "\tAccountNum: " + accountNum + "\tOwner: " + owner + "\tbalance: " + balance;
+        }
     }
 
 
