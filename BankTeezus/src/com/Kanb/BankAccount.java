@@ -25,10 +25,11 @@ public class BankAccount {
         }
 
 
-        @Override
-        public String toString() {
-            return "type: " + type + "\tAccountNum: " + accountNum + "\tOwner: " + owner + "\tbalance: " + balance;
-        }
+    }
+
+    @Override
+    public String toString() {
+        return "type: " + type + "\tAccountNum: " + accountNum + "\tOwner: " + owner + "\tbalance: " + balance;
     }
 
 
