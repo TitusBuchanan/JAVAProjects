@@ -29,7 +29,7 @@ public class BankAccount {
 
     @Override
     public String toString() {
-        return "type: " + type + "\tAccountNum: " + accountNum + "\tOwner: " + owner + "\tbalance: " + balance;
+        return "type: " + type + "\tAccountNumber: " + accountNum + "\tOwner: " + owner + "\tbalance: " + balance;
     }
 
 
