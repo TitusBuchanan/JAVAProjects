@@ -9,8 +9,9 @@ public class Main {
 
     public static void main(String[] args) {
      //For Loops
-        for (int i = 0; i < 5; i++){
-
+       int loop = 5;
+        for (int i = 0; i < loop; i++){
+            loop++;
         }
 
 
