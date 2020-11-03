@@ -8,15 +8,41 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-     //For Loops
+      //For each Loop
+        //String[] fruits = {"Apple", "Mango", "Orange"};
 
-        for (int i = 0; i < 5 ; i++)
-            System.out.println("Hello World");
+        //For Loop
+        //for(int i = 0; i < fruits.length; i++)
+          //  System.out.println(fruits[i]);
+        //For Each Loop
+       // for (String fruit: fruits)
+          //  System.out.println(fruit);
 
 
 
 
+       //Do while Loop
+        //Scanner scanner = new Scanner((System.in));
+       // String input = "";
+       // do {
+         //   System.out.println("Input: ");
+         //   input = scanner.next().toLowerCase();
+        //} while (!input.equals("quit"));
 
+
+       //While Loop
+        //Scanner scanner = new Scanner(System.in);
+        //String input = "";
+        // while(!input.equals("quit")){
+        // System.out.println("Input: ");
+
+       //  input = scanner.next().toLowerCase();
+          //   System.out.println(input);
+    // }
+
+        //For Loops
+        //or (int i = 0; i < 5 ; i++)
+            //System.out.println("Hello World " + i);
 
 
 
