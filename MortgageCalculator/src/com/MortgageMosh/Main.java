@@ -11,17 +11,35 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        int principal = (int) readNumber("Principal",1000,1000000);
+        int principal = (int) readNumber("Principal: ",1000,1000000);
        float annualInterest = (float) readNumber("Annual Intrest Rate: ", 1,30);
        byte years = (byte) readNumber("Period (Years)",1,30);
 
 
-        double mortgage = calculateMortgage(principal,annualInterest,years);
+        printMortgage(principal, annualInterest, years);
 
+        printPaymentSchedule(principal, annualInterest, years);
+
+
+    }
+
+    private static void printMortgage(int principal, float annualInterest, byte years) {
+        double mortgage = calculateMortgage(principal, annualInterest, years);
         String mortgageFormatted = NumberFormat.getCurrencyInstance().format(mortgage);
+        System.out.println();
+        System.out.println("MORTGAGE");
+        System.out.println("---------");
         System.out.print("Mortgage: " + mortgageFormatted);
+    }
 
-
+    private static void printPaymentSchedule(int principal, float annualInterest, byte years) {
+        System.out.println();
+        System.out.println("PAYMENT SCHEDULE");
+        System.out.println("-------------");
+        for (short month = 1; month <= years * MONTHS_IN_YEAR; month++){
+            double balance = calculateBalance(principal, annualInterest, years,month);
+            System.out.println(NumberFormat.getCurrencyInstance().format(balance));
+        }
     }
 
     public static  double readNumber(String prompt, double min, double max){
