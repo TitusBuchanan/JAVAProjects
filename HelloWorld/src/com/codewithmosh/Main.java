@@ -13,7 +13,7 @@ public class Main {
 
 
         //For each Loop
-        String[] fruits = {"Apple", "Mango", "Orange"};
+        //String[] fruits = {"Apple", "Mango", "Orange"};
 
         //For Loop
         //for(int i = 0; i < fruits.length; i++)
