@@ -12,7 +12,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         int principal = (int) readNumber("Principal: ",1000,1000000);
-       float annualInterest = (float) readNumber("Annual Intrest Rate: ", 1,30);
+       float annualInterest = (float) readNumber("Annual Interest Rate: ", 1,30);
        byte years = (byte) readNumber("Period (Years)",1,30);
 
 
