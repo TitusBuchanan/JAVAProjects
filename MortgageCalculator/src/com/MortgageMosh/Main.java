@@ -50,7 +50,7 @@ public class Main {
             value = scanner.nextFloat();
             if(value >= min && value <= max)
                 break;
-            System.out.println("Enter a Value between 1" + min + " and " + max);
+            System.out.println("Enter a Value Between 1" + min + " and " + max);
 
         }
         return value;
