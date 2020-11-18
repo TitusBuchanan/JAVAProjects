@@ -88,7 +88,7 @@ public class Main {
                         while(hitter.equals("hit"))//hits the user as many times as he or she pleases.
                         {
                             Hit(deck, hand);
-                            System.out.println("Your hand is now:");
+                            System.out.println("Your Hand is now:");
                             System.out.println(hand);
                             handvalue = calcHandValue(hand);
                             if(checkBust(handvalue))//checks if the user busted
