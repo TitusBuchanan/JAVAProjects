@@ -78,29 +78,3 @@ public class Main {
                             }
                         }
                         System.out.println("Would you like to hit or stand?");//ask if the user will hit or stand
-                        Scanner hitorstand = new Scanner(System.in);
-                        String hitter = hitorstand.nextLine();
-                        while(!isHitorStand(hitter))
-                        {
-                            System.out.println("Please enter 'hit' or 'stand'.");
-                            hitter = hitorstand.nextLine();
-                        }
-                        while(hitter.equals("hit"))//hits the user as many times as he or she pleases.
-                        {
-                            Hit(deck, hand);
-                            System.out.println("Your Hand is now:");
-                            System.out.println(hand);
-                            handvalue = calcHandValue(hand);
-                            if(checkBust(handvalue))//checks if the user busted
-                            {
-                                Lose();
-                                break;
-                            }
-                            if(handvalue<=21 && hand.size()==5)//checks for a five card trick.
-                            {
-                                fivecardtrick();
-                                break;
-                            }
-                            System.out.println("Would you like to hit or stand?");
-                            hitter = hitorstand.nextLine();
-                        }
