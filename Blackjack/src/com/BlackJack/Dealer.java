@@ -70,7 +70,7 @@ public class Dealer {
 
     public boolean hasBlackJack()
     {
-        if(hand.size()==2 && handvalue==21)
+        if(hand.size() == 2 && handvalue == 21)
         {
             System.out.println("The dealer has blackjack!");
             return true;
