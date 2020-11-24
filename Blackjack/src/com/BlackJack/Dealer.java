@@ -61,7 +61,7 @@ public class Dealer {
 
     public boolean wantsToHit()
     {
-        if(handvalue<17)
+        if(handvalue < 17)
         {
             return true;
         }
