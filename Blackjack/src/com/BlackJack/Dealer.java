@@ -72,7 +72,7 @@ public class Dealer {
     {
         if(hand.size() == 2 && handvalue == 21)
         {
-            System.out.println("The Dealer Has blackjack!");
+            System.out.println("The Dealer Has Blackjack!");
             return true;
         }
         return false;
