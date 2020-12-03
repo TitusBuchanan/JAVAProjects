@@ -40,21 +40,4 @@ public class Main {
                     int handvalue = calcHandValue(hand);
                     System.out.println("The dealer is showing: ");
                     dealer.showFirstCard();
-                    if(hasBlackJack(handvalue) && dealer.hasBlackJack())//check if both the user and dealer have blackjack.
-                    {
-                        Push();
-                    }
-                    else if(hasBlackJack(handvalue))//check if the user has blackjack.
-                    {
-                        System.out.println("You have BlackJack!");
-                        System.out.println("You win 2x your money back!");
-                        cash=cash+bet;
-                        Win();
-                    }
-                    else if(dealer.hasBlackJack())//check if the dealer has blackjack.
-                    {
-                        System.out.println("Here is the dealer's hand:");
-                        dealer.showHand();
-                        Lose();
-                    }
 
