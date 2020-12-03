@@ -57,24 +57,4 @@ public class Main {
                         dealer.showHand();
                         Lose();
                     }
-                    else
-                    {
-                        if(2*bet<cash)//check if the user can double down.
-                        {
-                            System.out.println("Would you like to double down?");//allows the user to double down.
-                            Scanner doubledown = new Scanner(System.in);
-                            String doubled = doubledown.nextLine();
-                            while(!isyesorno(doubled))
-                            {
-                                System.out.println("Please enter yes or no.");
-                                doubled = doubledown.nextLine();
-                            }
-                            if(doubled.equals("yes"))
-                            {
-                                System.out.println("You have opted to double down!");
-                                bet=2*bet;
-                                System.out.println("Cash:"+(cash-bet));
-                                System.out.println("Money on the table:"+bet);
-                            }
-                        }
-                        System.out.println("Would you like to hit or stand?");//ask if the user will hit or stand
+
